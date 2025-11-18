@@ -82,3 +82,153 @@ body {
     color: #888;
     font-size: 14px;
 }
+
+/* Drawer Styles */
+.Drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    border: none;
+    padding: 0;
+    background: transparent;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.Drawer[open] {
+    right: 0;
+}
+
+.Drawer::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.DrawerPanel {
+    height: 100%;
+    background: #1e1e1e;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.DrawerPanel__content {
+    padding: 2rem;
+    height: 100%;
+    overflow-y: auto;
+    color: #fff;
+}
+
+.DrawerCloseButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #d66f6f;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.DrawerCloseButton:hover {
+    background: #b85555;
+    transform: rotate(90deg);
+}
+
+.close-icon {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.drawer-content {
+    margin-top: 1rem;
+}
+
+.drawer-content h2 {
+    color: #d66f6f;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.drawer-content h3 {
+    color: #d66f6f;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.drawer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.drawer-content ul li {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background: #2a2a2a;
+    border-left: 4px solid #d66f6f;
+    border-radius: 4px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.drawer-content ul li strong {
+    color: #d66f6f;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.resource-link {
+    display: block;
+    padding: 1rem;
+    background: #d66f6f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.resource-link:hover {
+    background: #b85555;
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .line {
+        margin: 50px auto;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .left-container,
+    .right-container {
+        left: 0;
+    }
+
+    .line::after {
+        left: 31px;
+    }
+
+    .Drawer {
+        max-width: 100%;
+    }
+
+    .DrawerPanel__content {
+        padding: 1.5rem;
+    }
+}
