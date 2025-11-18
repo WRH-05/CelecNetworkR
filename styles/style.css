@@ -21,7 +21,6 @@ body {
 .container {
     width: 50%;
     position: relative;
-    background: #1e1e1e;
     padding: 20px 50px;
 }
 
@@ -32,4 +31,37 @@ body {
     text-align: justify;
     padding: 20px 50px;
     background: #fff;
+}
+
+.left-container {
+    left: 0;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.right-container {
+    left: 50%;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.line::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background: #d66f6f;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
 }
