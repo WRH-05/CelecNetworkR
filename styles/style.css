@@ -15,7 +15,6 @@ body {
     position: relative;
     max-width: 1200px;
     margin: 100px auto;
-
 }   
 
 .container {
@@ -28,9 +27,27 @@ body {
     position: relative;
     font-size: 15px;
     border-radius: 6px;
-    text-align: justify;
+    text-align: center;
     padding: 20px 50px;
     background: #fff;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.text-box h2 {
+    color: #121212;
+    margin: 0;
+}
+
+.text-box:hover {
+    background: #d66f6f;
+    transform: scale(1.05);
+}
+
+.text-box:hover h2 {
+    color: #fff;
 }
 
 .left-container {
