@@ -28,13 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close drawer when clicking on backdrop
     drawers.forEach(drawer => {
         drawer.addEventListener('click', (e) => {
-            const dialogDimensions = drawer.getBoundingClientRect();
-            if (
-                e.clientX < dialogDimensions.left ||
-                e.clientX > dialogDimensions.right ||
-                e.clientY < dialogDimensions.top ||
-                e.clientY > dialogDimensions.bottom
-            ) {
+            if (e.target === drawer) {
                 drawer.close();
             }
         });
