@@ -87,9 +87,8 @@ body {
 .Drawer {
     position: fixed;
     top: 0;
-    right: -100%;
-    width: 100%;
-    max-width: 500px;
+    right: -33.33vw;
+    width: 33.33vw;
     height: 100%;
     border: none;
     padding: 0;
