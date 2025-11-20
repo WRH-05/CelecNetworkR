@@ -1,3 +1,11 @@
+// Drop menu 
+const menuIcon = document.getElementById('menu-icon');
+const menu = document.getElementById('menu');
+
+menuIcon.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
 // Drawer functionality
 document.addEventListener('DOMContentLoaded', function() {
     const topicButtons = document.querySelectorAll('.text-box');
