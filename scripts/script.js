@@ -1,9 +1,13 @@
 // Drop menu 
-const menuIcon = document.getElementById('menu-icon');
-const menu = document.getElementById('menu');
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.getElementById('menu-icon');
+    const menu = document.getElementById('menu');
 
-menuIcon.addEventListener('click', () => {
-    menu.classList.toggle('active');
+    if (menuIcon && menu) {
+        menuIcon.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    }
 });
 
 // Drawer functionality
