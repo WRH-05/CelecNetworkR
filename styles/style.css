@@ -11,6 +11,63 @@ body {
     line-height: 1.6;
 }
 
+/* le drop menu */
+.nav {
+    padding-top: 20px;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-icon {
+    display: block;
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top : 10px;
+    color: #fff;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #ce7d7d;
+    padding: 20px;
+    border-radius: 5px;
+    gap : 0;
+}
+.menu li {
+    padding-bottom: 15px ;
+    padding-top: 15px ;
+    padding-left: 60px ;
+    padding-right: 60px ;
+}
+
+.menu.active {
+    display: flex;
+}
+
+.nav ul li:hover {
+    background-color: #3c3b3b;
+    border-radius: 5px;
+}
+
+.nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold ;
+}
+
+
 .line{
     position: relative;
     max-width: 1200px;
