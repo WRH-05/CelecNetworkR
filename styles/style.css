@@ -37,7 +37,7 @@ body {
     position: absolute;
     top: 60px;
     right: 20px;
-    z-index: 10000000;
+    z-index: 1000;
     background-color: #ce7d7d;
     padding: 20px;
     border-radius: 5px;
