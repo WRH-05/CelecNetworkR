@@ -1,0 +1,47 @@
+
+
+
+/* faure disparaitre le scroll bar */
+.DrawerPanel__content::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}
+.Drawer{
+    max-height: 99vh;
+    right : -40vw;
+    width : 40vw;
+    /*
+    position: relative;
+    */
+}
+/*
+.DrawerPanel{
+    position: relative;
+}
+    */
+.Drawer h2 {
+    background-color: #1e1e1e;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 20px 20px 10px 5px;
+    margin: 0;
+}
+.DrawerPanel__content{
+    padding-top: 0;
+}
+
+.drawer-content h3 {
+    color: #d66f6f;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+@media (max-width: 768px) {
+    .Drawer {
+        max-width: 100%;
+        width : 100%;
+    }
+
+}
