@@ -45,3 +45,16 @@
     }
 
 }
+
+.intro{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 15% ;
+}
+
+.intro h1 {
+    color: #fff;
+    margin-inline:auto ;   
+}
