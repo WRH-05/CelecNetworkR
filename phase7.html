@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 7</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <div class="line">
+
+        <div class="container left-container">
+            <button class="text-box" data-topic="network-intro">
+                <h2>Software Defined Networking (SDN)</h2>
+            </button>
+        </div>
+
+        <div class="container right-container">
+            <button class="text-box" data-topic="network-types">
+                <h2>Network Function Virtualization (NFV)</h2>
+            </button>
+        </div>
+
+        <div class="container left-container">
+            <button class="text-box" data-topic="osi-tcp">
+                <h2>Cloud Networking</h2>
+            </button>
+        </div>
+
+        <div class="container right-container">
+            <button class="text-box" data-topic="ip-basics">
+                <h2>Network automation with Python</h2>
+            </button>
+        </div>
+
+        <div class="container left-container">
+            <button class="text-box" data-topic="network-devices">
+                <h2>IoT networking considerations</h2>
+            </button>
+        </div>
+
+        <div class="container right-container">
+            <button class="text-box" data-topic="network-troubleshooting">
+                <h2>Resources: SDN/NFV Tutorials Cloud Networking Docs Network Automation with Python</h2>
+            </button>
+        </div>
+
+    </div>
+
+    <dialog id="drawer-network-intro" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>Software Defined Networking (SDN)</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li>SDN separates the control plane from the data plane</li>
+                        <li>Allows centralized network management</li>
+                        <li>Improves flexibility and scalability</li>
+                        <li>Useful for dynamic network configurations</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.tutorialspoint.com/software-defined-networking/" target="_blank" class="resource-link">Tutorialspoint - Software-Defined Networking Tutorial</a>
+                        <a href="https://www.fs.com/blog/sdn-demystified-a-beginners-guide-to-softwaredefined-networking-16667.html" target="_blank" class="resource-link">FS - A Beginner's Guide to SDN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="drawer-network-types" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>Network Function Virtualization (NFV)</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li>NFV replaces hardware appliances with software functions</li>
+                        <li>Runs on standard servers instead of dedicated devices</li>
+                        <li>Reduces cost and deployment time</li>
+                        <li>Often used alongside SDN for modern networks</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.etsi.org/technologies/nfv/nfv-tutorials" target="_blank" class="resource-link">ETSI - NFV Tutorials</a>
+                        <a href="https://www.a10networks.com/glossary/what-is-nfv-network-functions-virtualization-vnf-virtualized-network-functions/" target="_blank" class="resource-link">A10 Networks - What is NFV & Virtualized Network Functions?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="drawer-osi-tcp" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>Cloud Networking</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li>Connects on-premise networks with cloud environments</li>
+                        <li>Enables scalable and flexible resource access</li>
+                        <li>Supports hybrid and multi-cloud architectures</li>
+                        <li>Includes virtual networks, firewalls, and load balancers</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://aws.amazon.com/what-is/cloud-networking/" target="_blank" class="resource-link">Amazon - What is cloud networking?</a>
+                        <a href="https://www.simplilearn.com/tutorials/cloud-computing-tutorial/what-is-cloud-networking" target="_blank" class="resource-link">Simplilearn - What is cloud networking?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="drawer-ip-basics" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>Network Automation with Python </h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li>Automates repetitive networking tasks</li>
+                        <li>Configures routers, switches, and firewalls programmatically</li>
+                        <li>Uses libraries like Netmiko, NAPALM, and Paramiko</li>
+                        <li>Increases efficiency and reduces human errors</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://python-automation-book.readthedocs.io/en/stable/" target="_blank" class="resource-link">Python Automation Book - Python for Network Automation</a>
+                        <a href="https://netboxlabs.com/blog/nornir-python-tutorial-get-started-with-network-automation/" target="_blank" class="resource-link">Netboxlabs - Nornir Python Tutorial</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="drawer-network-devices" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>IoT Networking Considerations</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li>IoT devices require secure, low-latency networks</li>
+                        <li>Supports various protocols like MQTT, CoAP, and HTTP</li>
+                        <li>Networks must handle large numbers of devices</li>
+                        <li>Focus on energy efficiency and scalability</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.iotforall.com/beginners-guide-to-iot-connectivity-technologies" target="_blank" class="resource-link">Iotforall - Beginners Guide to IoT Connectivity Technologies</a>
+                        <a href="https://securithings.com/iot-security/iot-network-security/" target="_blank" class="resource-link">Securithings - IoT Network Security: Tutorial & Best Practices</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="drawer-network-troubleshooting" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>Resources</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li>SDN/NFV Tutorials: online courses and official docs</li>
+                        <li>Cloud Networking Docs: AWS, Azure, Google Cloud guides</li>
+                        <li>Network Automation with Python: GitHub repos and tutorials</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://carrier.huawei.com/en/solutions/cloud-enabled-digital-operations/nfv-sdn-Integration" target="_blank" class="resource-link">Huawei - NFV Integration and Operation</a>
+                        <a href="https://www.cisco.com/c/en/us/solutions/cloud/index.html" target="_blank" class="resource-link">Cisco - Cloud Solutions</a>
+                        <a href="https://github.com/ktbyers/netmiko/tree/develop/examples" target="_blank" class="resource-link">GitHub - Network Automation Examples by Netmiko</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <footer>
+        <div class="container-footer">
+            <p>&copy; 2025 Celec Network Roadmap. Master networking step by step.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
