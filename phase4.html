@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style(pahse4).css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <nav>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <div class="nav">
+            <ul class="menu" id="menu">
+                <li><a href="phase1.html">Phase 1</a></li>
+                <li><a href="phase2.html">Phase 2</a></li>
+                <li><a href="phase3.html">Phase 3</a></li>
+                <li><a href="phase4.html">Phase 4</a></li>
+                <li><a href="phase5.html">Phase 5</a></li>
+                <li><a href="phase6.html">Phase 6</a></li>
+                <li><a href="phase7.html">Phase 7</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="intro">
+        <h1>PHASE 4 : Networking fundamentals</h1>
+    </div>
+    <div class="line">
+        <div class="container left-container">
+            <button class="text-box" data-topic="network-intro">
+                <h2>IPv4 addressing</h2>
+            </button>
+        </div>
+
+        <div class="container right-container">
+            <button class="text-box" data-topic="network-types">
+                <h2>Subnetting and supernetting</h2>
+            </button>
+        </div>
+
+        <div class="container left-container">
+            <button class="text-box" data-topic="osi-tcp">
+                <h2>Variable Length Subnet Masking (VLSM)</h2>
+            </button>
+        </div>
+
+        <div class="container right-container">
+            <button class="text-box" data-topic="ip-basics">
+                <h2>IPv6 addressing</h2>
+            </button>
+        </div>
+
+        <div class="container left-container">
+            <button class="text-box" data-topic="network-devices">
+                <h2>NAT and PAT</h2>
+            </button>
+        </div>
+    </div>
+
+    <dialog id="drawer-network-intro" class="Drawer">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>IPv4 addressing</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li>IPv4, or Internet Protocol version 4, is a widely used system for identifying devices on a network</li>
+                        <li>IPv4 are typically represented in a dotted decimal format, where the 32 bits are divided into four 8-bit separated by periods.</li>
+                        <li>An IPv4 address consists of two main parts : Network part and Host part</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://ipcisco.com/lesson/ip-addressing-ipv4/" target="_blank" class="resource-link">IPCisco - What is a IPv4?</a>
+                        <a href="https://www.youtube.com/watch?v=OqsXzkXfwRw" target="_blank" class="resource-link">TechTerms - IP addressing and Subnetting | CIDR | Subnet | TechTerms</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog id="drawer-network-types" class="Drawer">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>Subnetting and supernetting</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts of Subnetting</h3>
+                    <ul>
+                        <li>Subnetting involves breaking a larger network into smaller, more manageable sub-networks (subnets)</li>
+                        <li>The host portion size in each subnetwork is decreased.</li>
+                        <li>An IPv4 address consists of two main parts : Network part and Host part</li>
+                    </ul>
+                    <h3>Key Concepts of Supernetting</h3>
+                    <ul>
+                        <li>However , supernetting involves combining smaller networks into larger ones</li>
+                        <li>IPv4 are typically represented in a dotted decimal format, where the 32 bits are divided into four 8-bit separated by periods.</li>
+                        <li>An IPv4 address consists of two main parts : Network part and Host part</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.networkstraining.com/supernet-vs-subnet/" target="_blank" class="resource-link">NETWORKS TRAINING - supernet-vs-subnet</a>
+                        <a href="https://www.youtube.com/watch?v=UHRPtNZ_Rz4&list=PLBlnK6fEyqRh1et0MyvHfh9_nBfI0cfkd" target="_blank" class="resource-link">Neso Academy - Subbnetting</a>
+                        <a href="https://www.youtube.com/watch?v=-jbthNKgh8g" target="_blank" class="resource-link">Route Summarization: Supernetting</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog  id="drawer-osi-tcp" class="Drawer">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>Variable Length Subnet Masking (VLSM)</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li>VLSM is a subnet design strategy that allows network administrators to divide an IP address space into subnets of different sizes</li>
+                        <li>The subnets have a variable number of hosts</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.comparitech.com/net-admin/variable-length-subnet-mask-vlsm-tutorial/" target="_blank" class="resource-link">comparitech - Variable Length Subnet Mask (VLSM) Tutorial</a>
+                        <a href="https://www.geeksforgeeks.org/computer-networks/introduction-of-variable-length-subnet-mask-vlsm/" target="_blank" class="resource-link">geeksforgeeks - Introduction of VLSM</a>
+                        <a href="https://www.youtube.com/watch?v=P5t2gN2l7ZI" target="_blank" class="resource-link">Video Tutorial VLSM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog id="drawer-ip-basics" class="Drawer">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>IPv6 addressing</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li>IPv6, or Internet Protocol version 6, is the next-generation protocol developed to solve IPv4's address limitation problem.</li>
+                        <li>It enabled the increase of the address space from 32 to 128 bits.</li>
+                        <li>Like the IPv4 , it also consists of two main parts : Network Prefix Interface Identifier</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.it-connect.fr/chapitres/ipv6-normes-et-definitions/" target="_blank" class="resource-link">it-connect - IPV6:normes-et-definitions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog id="drawer-network-devices" class="Drawer">
+            <div class="DrawerPanel">
+                <div class="DrawerPanel__content">
+                    <button type="button" class="DrawerCloseButton" data-drawer-close>
+                        <span class="close-icon">✕</span>
+                    </button>
+                    <h2>NAT and PAT</h2>
+                    <div class="drawer-content">
+                        <h3>Key Concepts</h3>
+                        <ul>
+                            <li>NAT stands for Network Address Translation and PAT stands for Port Address Translation </li>
+                            <li>They are primarily used to address the shortage of IPv4 addresses, enhance security, and improve routing efficiency.</li>
+                        </ul>
+                        <h3>Learning Resources</h3>
+                        <div class="resources">
+                            <a href="https://www.youtube.com/watch?v=qij5qpHcbBk" target="_blank" class="resource-link">CertBros- NAT Explained | Overload, Dynamic & Static</a>
+                            <a href="https://www.geeksforgeeks.org/computer-networks/difference-between-network-address-translation-nat-and-port-address-translation-pat/" target="_blank" class="resource-link">geeksforgeeks - Difference Between NAT and PAT.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </dialog>
+
+
+    <footer>
+        <div class="container-footer">
+            <p>&copy; 2025 Celec Network Roadmap. Master networking step by step.</p>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
