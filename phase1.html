@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking Learning Roadmap - Celec Network</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <div class="nav">
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Phase 1</a></li>
+                <li><a href="phase2.html">Phase 2</a></li>
+                <li><a href="phase3.html">Phase 3</a></li>
+                <li><a href="phase4.html">Phase 4</a></li>
+                <li><a href="phase5.html">Phase 5</a></li>
+                <li><a href="phase6.html">Phase 6</a></li>
+                <li><a href="phase7.html">Phase 7</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="line">
+        <div class="container left-container">
+            <button class="text-box" data-topic="network-intro">
+                <h2>What is a Network?</h2>
+            </button>
+        </div>
+
+        <div class="container right-container">
+            <button class="text-box" data-topic="network-types">
+                <h2>Network Types</h2>
+            </button>
+        </div>
+
+        <div class="container left-container">
+            <button class="text-box" data-topic="osi-tcp">
+                <h2>OSI and TCP/IP models</h2>
+            </button>
+        </div>
+
+        <div class="container right-container">
+            <button class="text-box" data-topic="ip-basics">
+                <h2>IP addressing basics</h2>
+            </button>
+        </div>
+
+        <div class="container left-container">
+            <button class="text-box" data-topic="network-devices">
+                <h2>Network devices overview</h2>
+            </button>
+        </div>
+
+        <div class="container right-container">
+            <button class="text-box" data-topic="network-troubleshooting">
+                <h2>Basic network troubleshooting</h2>
+            </button>
+        </div>
+    </div>
+
+    <!-- Drawers -->
+    <dialog id="drawer-network-intro" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>What is a Network?</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li>A network is a collection of computers, servers, mainframes, network devices, or other devices connected to one another</li>
+                        <li>Allows sharing of data and resources between connected devices</li>
+                        <li>Basic components include nodes (devices), links (connections), and protocols (communication rules)</li>
+                        <li>Networks enable collaboration, resource sharing, and efficient communication</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.cloudflare.com/learning/network-layer/what-is-a-computer-network/" target="_blank" class="resource-link">Cloudflare - What is a Network?</a>
+                        <a href="https://www.youtube.com/watch?v=3QhU9jd03a0" target="_blank" class="resource-link">YouTube - Computer Networks Intro</a>
+                        <a href="https://www.cisco.com/c/en/us/solutions/small-business/resource-center/networking/networking-basics.html" target="_blank" class="resource-link">Cisco - Networking Basics</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="drawer-network-types" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>Network Types</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li><strong>LAN (Local Area Network):</strong> Covers a small area like a home, office, or building. High speed and limited geographic scope.</li>
+                        <li><strong>WAN (Wide Area Network):</strong> Spans large geographic areas, cities, countries, or continents. The Internet is the largest WAN.</li>
+                        <li><strong>MAN (Metropolitan Area Network):</strong> Covers a city or large campus. Larger than LAN but smaller than WAN.</li>
+                        <li><strong>PAN (Personal Area Network):</strong> Smallest network type, typically for individual workspace (e.g., Bluetooth devices).</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.geeksforgeeks.org/types-of-area-networks-lan-man-and-wan/" target="_blank" class="resource-link">GeeksforGeeks - Network Types</a>
+                        <a href="https://www.youtube.com/watch?v=6a-roIeJ_a4" target="_blank" class="resource-link">YouTube - LAN vs WAN vs MAN</a>
+                        <a href="https://www.comptia.org/content/guides/what-is-a-network" target="_blank" class="resource-link">CompTIA - Network Types Guide</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="drawer-osi-tcp" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>OSI and TCP/IP Models</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li><strong>OSI Model (7 layers):</strong> Physical, Data Link, Network, Transport, Session, Presentation, Application</li>
+                        <li><strong>TCP/IP Model (4 layers):</strong> Network Access, Internet, Transport, Application</li>
+                        <li>Both models provide conceptual frameworks for understanding network communication</li>
+                        <li>OSI is theoretical reference model; TCP/IP is the practical implementation used in the Internet</li>
+                        <li>Understanding these models helps in troubleshooting and network design</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/" target="_blank" class="resource-link">Cloudflare - OSI Model</a>
+                        <a href="https://www.youtube.com/watch?v=vv4y_uOneC0" target="_blank" class="resource-link">YouTube - OSI Model Explained</a>
+                        <a href="https://www.geeksforgeeks.org/tcp-ip-model/" target="_blank" class="resource-link">GeeksforGeeks - TCP/IP Model</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="drawer-ip-basics" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>IP Addressing Basics</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li><strong>IP Address:</strong> Unique identifier for devices on a network, enabling communication</li>
+                        <li><strong>IPv4:</strong> 32-bit addresses (e.g., 192.168.1.1) - most common format</li>
+                        <li><strong>IPv6:</strong> 128-bit addresses for expanded address space</li>
+                        <li><strong>Public IP:</strong> Internet-routable addresses visible globally</li>
+                        <li><strong>Private IP:</strong> Internal network addresses (192.168.x.x, 10.x.x.x)</li>
+                        <li><strong>Classes:</strong> Class A, B, C for different network sizes</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html" target="_blank" class="resource-link">Cisco - IP Addressing</a>
+                        <a href="https://www.youtube.com/watch?v=ddM9AcreVqY" target="_blank" class="resource-link">YouTube - IP Addressing Tutorial</a>
+                        <a href="https://www.comptia.org/content/guides/what-is-an-ip-address" target="_blank" class="resource-link">CompTIA - IP Address Guide</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="drawer-network-devices" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>Network Devices Overview</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li><strong>Router:</strong> Connects different networks and directs data traffic between them</li>
+                        <li><strong>Switch:</strong> Connects devices within a network, operating at Layer 2 (Data Link)</li>
+                        <li><strong>Hub:</strong> Basic device that broadcasts data to all connected ports</li>
+                        <li><strong>Access Point:</strong> Provides wireless connectivity to devices</li>
+                        <li><strong>Modem:</strong> Converts digital signals to analog and vice versa for internet access</li>
+                        <li><strong>Firewall:</strong> Security device that filters and monitors network traffic</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.cisco.com/c/en/us/solutions/small-business/resource-center/networking/networking-equipment-list.html" target="_blank" class="resource-link">Cisco - Networking Equipment</a>
+                        <a href="https://www.youtube.com/watch?v=Mad4kQ5835Y" target="_blank" class="resource-link">YouTube - Network Devices</a>
+                        <a href="https://www.geeksforgeeks.org/network-devices-hub-repeater-bridge-switch-router-gateways/" target="_blank" class="resource-link">GeeksforGeeks - Network Devices</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="drawer-network-troubleshooting" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>Basic Network Troubleshooting</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li><strong>Ping:</strong> Tests connectivity between devices and measures response time</li>
+                        <li><strong>Traceroute/Tracert:</strong> Shows the path packets take to reach a destination</li>
+                        <li><strong>Ipconfig/Ifconfig:</strong> Displays network configuration information</li>
+                        <li><strong>NSLookup:</strong> Queries DNS to resolve domain names to IP addresses</li>
+                        <li>Common issues: Cable problems, IP conflicts, DNS issues, firewall blocking</li>
+                        <li>Systematic approach: Check physical connections, verify IP configuration, test connectivity</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.comptia.org/content/guides/basic-network-troubleshooting-steps" target="_blank" class="resource-link">CompTIA - Troubleshooting Guide</a>
+                        <a href="https://www.youtube.com/watch?v=FTUV0t6JaDA" target="_blank" class="resource-link">YouTube - Network Troubleshooting</a>
+                        <a href="https://www.cisco.com/c/en/us/support/docs/dial-access/asynchronous-connections/10374-32.html" target="_blank" class="resource-link">Cisco - Troubleshooting Basics</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <footer>
+        <div class="container-footer">
+            <p>&copy; 2025 Celec Network Roadmap. Master networking step by step.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
