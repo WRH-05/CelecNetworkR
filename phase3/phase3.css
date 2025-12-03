@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #d66f6f;
+    line-height: 1.6;
+}
+
+/* le drop menu */
+.nav {
+    padding-top: 20px;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-icon {
+    display: block;
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top : 10px;
+    color: #fff;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #ce7d7d;
+    padding: 20px;
+    border-radius: 5px;
+    gap : 0;
+}
+.menu li {
+    padding-bottom: 15px ;
+    padding-top: 15px ;
+    padding-left: 60px ;
+    padding-right: 60px ;
+}
+
+.menu.active {
+    display: flex;
+}
+
+.nav ul li:hover {
+    background-color: #3c3b3b;
+    border-radius: 5px;
+}
+
+.nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold ;
+}
+
+
+.line{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}   
+
+.container {
+    width: 50%;
+    position: relative;
+    padding: 20px 50px;
+}
+
+.text-box{
+    position: relative;
+    font-size: 15px;
+    border-radius: 6px;
+    text-align: center;
+    padding: 20px 50px;
+    background: #fff;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.text-box h2 {
+    color: #121212;
+    margin: 0;
+}
+
+.text-box:hover {
+    background: #d66f6f;
+    transform: scale(1.05);
+}
+
+.text-box:hover h2 {
+    color: #fff;
+}
+
+.left-container {
+    left: 0;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.right-container {
+    left: 50%;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.line::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background: #d66f6f;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Drawer Styles */
+.Drawer {
+    position: fixed;
+    top: 0;
+    right: -33.33vw;
+    width: 33.33vw;
+    height: 100%;
+    border: none;
+    padding: 0;
+    background: transparent;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.Drawer[open] {
+    right: 0;
+}
+
+.Drawer::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.DrawerPanel {
+    height: 100%;
+    background: #1e1e1e;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.DrawerPanel__content {
+    padding: 2rem;
+    height: 100%;
+    overflow-y: auto;
+    color: #fff;
+}
+
+.DrawerCloseButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #d66f6f;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.DrawerCloseButton:hover {
+    background: #b85555;
+    transform: rotate(90deg);
+}
+
+.close-icon {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.drawer-content {
+    margin-top: 1rem;
+}
+
+.drawer-content h2 {
+    color: #d66f6f;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.drawer-content h3 {
+    color: #d66f6f;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.drawer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.drawer-content ul li {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background: #2a2a2a;
+    border-left: 4px solid #d66f6f;
+    border-radius: 4px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.drawer-content ul li strong {
+    color: #d66f6f;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.resource-link {
+    display: block;
+    padding: 1rem;
+    background: #d66f6f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.resource-link:hover {
+    background: #b85555;
+    transform: translateX(5px);
+}
+
+/* Responsivnesssss */
+@media (max-width: 768px) {
+    .line {
+        margin: 50px auto;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .left-container,
+    .right-container {
+        left: 0;
+    }
+
+    .line::after {
+        left: 31px;
+    }
+
+    .Drawer {
+        max-width: 100%;
+    }
+
+    .DrawerPanel__content {
+        padding: 1.5rem;
+    }
+}
