@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 3 - Networking Learning Roadmap</title>
+    <link rel="stylesheet" href="phase3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="line">
+        <div class="container left-container">
+            <button class="text-box" data-topic="tcp-ip">
+                <h2>TCP/IP Suite Deep Dive</h2>
+            </button>
+        </div>
+
+        <div class="container right-container">
+            <button class="text-box" data-topic="dns-dhcp-http">
+                <h2>DNS, DHCP, HTTP/HTTPS</h2>
+            </button>
+        </div>
+
+        <div class="container left-container">
+            <button class="text-box" data-topic="email-protocols">
+                <h2>Email Protocols (SMTP, POP3, IMAP)</h2>
+            </button>
+        </div>
+
+        <div class="container right-container">
+            <button class="text-box" data-topic="file-transfer">
+                <h2>File Transfer Protocols (FTP, SFTP)</h2>
+            </button>
+        </div>
+
+        <div class="container left-container">
+            <button class="text-box" data-topic="ntp">
+                <h2>Network Time Protocol (NTP)</h2>
+            </button>
+        </div>
+    </div>
+
+<dialog id="drawer-tcp-ip" class="Drawer Drawer--right">
+    <div class="DrawerPanel">
+        <div class="DrawerPanel__content">
+            <button type="button" class="DrawerCloseButton" data-drawer-close><span class="close-icon">✕</span></button>
+            <h2>TCP/IP Suite Deep Dive</h2>
+            <div class="drawer-content">
+                <h3>Key Concepts</h3>
+                <ul>
+                    <li>TCP/IP is the core protocol suite of the Internet.</li>
+                    <li>Consists of four layers: Link, Internet, Transport, Application.</li>
+                    <li>Defines rules for communication between networked devices.</li>
+                </ul>
+                <h3>Learning Resources</h3>
+                <div class="resources">
+                    <a href="https://www.youtube.com/watch?v=vKFLgmSC6do" target="_blank" class="resource-link">Quick intro: How TCP/IP Works</a>
+                    <a href="https://www.youtube.com/watch?v=tK61YFdO3Kw" target="_blank" class="resource-link">MASTER the TCP/IP Model in 5 Minutes!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+
+<dialog id="drawer-dns-dhcp-http" class="Drawer Drawer--right">
+    <div class="DrawerPanel">
+        <div class="DrawerPanel__content">
+            <button type="button" class="DrawerCloseButton" data-drawer-close><span class="close-icon">✕</span></button>
+            <h2>DNS, DHCP, HTTP/HTTPS</h2>
+            <div class="drawer-content">
+                <h3>Key Concepts</h3>
+                <ul>
+                    <li>DNS resolves domain names to IP addresses.</li>
+                    <li>DHCP automatically assigns IP addresses to devices.</li>
+                    <li>HTTP is the standard protocol for web communication; HTTPS is secure.</li>
+                </ul>
+                <h3>Learning Resources</h3>
+                <div class="resources">
+                    <a href="https://www.youtube.com/watch?v=72snZctFFtA" target="_blank" class="resource-link">DNS & DHCP Explained</a>
+                    <a href="https://www.youtube.com/watch?v=OTwp3xtd4dg" target="_blank" class="resource-link">TCP/IP Model Explained (includes HTTP/HTTPS)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+
+<dialog id="drawer-email-protocols" class="Drawer Drawer--right">
+    <div class="DrawerPanel">
+        <div class="DrawerPanel__content">
+            <button type="button" class="DrawerCloseButton" data-drawer-close><span class="close-icon">✕</span></button>
+            <h2>Email Protocols (SMTP, POP3, IMAP)</h2>
+            <div class="drawer-content">
+                <h3>Key Concepts</h3>
+                <ul>
+                    <li>SMTP is used to send emails.</li>
+                    <li>POP3 downloads emails from server; IMAP syncs emails across devices.</li>
+                    <li>Understanding protocols helps troubleshoot email delivery issues.</li>
+                </ul>
+                <h3>Learning Resources</h3>
+                <div class="resources">
+                    <a href="https://www.youtube.com/watch?v=gLNOVbcyWbI" target="_blank" class="resource-link">What are POP3, IMAP, and SMTP?</a>
+                    <a href="https://www.youtube.com/watch?v=IMLFrYqI-oQ" target="_blank" class="resource-link">SMTP vs IMAP vs POP3 Explained</a>
+                    <a href="https://www.youtube.com/watch?v=EZTVaKcEgnc" target="_blank" class="resource-link">Email Protocols (Animated)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+
+<dialog id="drawer-file-transfer" class="Drawer Drawer--right">
+    <div class="DrawerPanel">
+        <div class="DrawerPanel__content">
+            <button type="button" class="DrawerCloseButton" data-drawer-close><span class="close-icon">✕</span></button>
+            <h2>File Transfer Protocols (FTP, SFTP)</h2>
+            <div class="drawer-content">
+                <h3>Key Concepts</h3>
+                <ul>
+                    <li>FTP transfers files between computers over a network.</li>
+                    <li>SFTP is secure, using SSH to encrypt the file transfer.</li>
+                    <li>Essential for website deployment and server management.</li>
+                </ul>
+                <h3>Learning Resources</h3>
+                <div class="resources">
+                    <a href="https://www.youtube.com/watch?v=e5SkEgqIztU" target="_blank" class="resource-link">FTP vs SFTP Understanding the Difference</a>
+                    <a href="https://www.youtube.com/watch?v=Ztmaf9GBuyU" target="_blank" class="resource-link">FTP vs SFTP Explained for Beginners</a>
+                    <a href="https://www.youtube.com/watch?v=A9nvEDPsp5g" target="_blank" class="resource-link">What are FTP, FTPS, SFTP, and TFTP?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+
+<dialog id="drawer-ntp" class="Drawer Drawer--right">
+    <div class="DrawerPanel">
+        <div class="DrawerPanel__content">
+            <button type="button" class="DrawerCloseButton" data-drawer-close><span class="close-icon">✕</span></button>
+            <h2>Network Time Protocol (NTP)</h2>
+            <div class="drawer-content">
+                <h3>Key Concepts</h3>
+                <ul>
+                    <li>NTP synchronizes clocks of computers over a network.</li>
+                    <li>Ensures accurate time for logging, security, and scheduling tasks.</li>
+                    <li>Operates in a client-server model with hierarchical time sources.</li>
+                </ul>
+                <h3>Learning Resources</h3>
+                <div class="resources">
+                    <a href="https://www.youtube.com/watch?v=oCtkwEjhyD4" target="_blank" class="resource-link">NTP Explained | Network Time Protocol</a>
+                    <a href="https://www.youtube.com/watch?v=-v_KXg-xSw0" target="_blank" class="resource-link">NTP Overview & Configuration</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+
+    <footer>
+        <div class="container-footer">
+            <p>&copy; 2025 Celec Network Roadmap. Master networking step by step.</p>
+        </div>
+    </footer>
+
+    <script src="phase3.js"></script>
+</body>
+</html>
