@@ -144,8 +144,9 @@ body {
 .Drawer {
     position: fixed;
     top: 0;
-    right: -33.33vw;
-    width: 33.33vw;
+    max-height: 99vh;
+    right : -40vw;
+    width : 40vw;
     height: 100%;
     border: none;
     padding: 0;
@@ -153,7 +154,10 @@ body {
     transition: right 0.3s ease;
     z-index: 1000;
 }
-
+.DrawerPanel__content::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}
 .Drawer[open] {
     right: 0;
 }
@@ -173,8 +177,18 @@ body {
     height: 100%;
     overflow-y: auto;
     color: #fff;
+    padding-top: 0;
 }
 
+.Drawer h2 {
+    background-color: #1e1e1e;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 20px 20px 10px 5px;
+    margin: 0;
+}
 .DrawerCloseButton {
     position: absolute;
     top: 1rem;
@@ -260,6 +274,19 @@ body {
     transform: translateX(5px);
 }
 
+.intro{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 15% ;
+}
+
+.intro h1 {
+    color: #fff;
+    margin-inline:auto ;   
+}
+
 /* Responsivnesssss */
 @media (max-width: 768px) {
     .line {
@@ -282,12 +309,14 @@ body {
 
     .Drawer {
         max-width: 100%;
+        width : 100%;
     }
 
     .DrawerPanel__content {
         padding: 1.5rem;
     }
 }
+
 
 
 /* the main page styling */
