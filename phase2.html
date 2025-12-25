@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 2 - Networking Learning Roadmap</title>
+    <link rel="stylesheet" href="phase2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="line">
+
+        <div class="container left-container">
+            <button class="text-box" data-topic="switches">
+                <h2>Switches & Switching Concepts</h2>
+            </button>
+        </div>
+
+        <div class="container right-container">
+            <button class="text-box" data-topic="routers">
+                <h2>Routers & Routing Fundamentals</h2>
+            </button>
+        </div>
+
+        <div class="container left-container">
+            <button class="text-box" data-topic="wireless">
+                <h2>Wireless Networks</h2>
+            </button>
+        </div>
+
+        <div class="container right-container">
+            <button class="text-box" data-topic="topologies">
+                <h2>Network Topologies</h2>
+            </button>
+        </div>
+
+        <div class="container left-container">
+            <button class="text-box" data-topic="cabling">
+                <h2>Cabling & Physical Media</h2>
+            </button>
+        </div>
+
+    </div>
+
+
+
+
+<dialog id="drawer-switches" class="Drawer Drawer--right">
+    <div class="DrawerPanel">
+        <div class="DrawerPanelcontent">
+            <button type="button" class="DrawerCloseButton" data-drawer-close>
+                <span class="close-icon">✕</span>
+            </button>
+            <h2>Switches & Switching Concepts</h2>
+
+            <div class="drawer-content">
+                <h3>Key Concepts</h3>
+                <ul>
+                    <li>Switches operate at Layer 2 and use MAC addresses to forward frames.</li>
+                    <li>They maintain a MAC Address Table (CAM table) to know which device is on which port.</li>
+                    <li>Support concepts like broadcast, unicast, and multicast communication.</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+
+
+
+<dialog id="drawer-routers" class="Drawer Drawer--right">
+    <div class="DrawerPanel">
+        <div class="DrawerPanelcontent">
+            <button type="button" class="DrawerCloseButton" data-drawer-close>
+                <span class="close-icon">✕</span>
+            </button>
+            <h2>Routers & Routing Fundamentals</h2>
+
+            <div class="drawer-content">
+                <h3>Key Concepts</h3>
+                <ul>
+                    <li>Routers operate at Layer 3 and determine the best path for packets.</li>
+                    <li>Use routing tables to forward data between different networks.</li>
+                    <li>Support static and dynamic routing protocols.</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+
+
+<dialog id="drawer-wireless" class="Drawer Drawer--right">
+    <div class="DrawerPanel">
+        <div class="DrawerPanelcontent">
+            <button type="button" class="DrawerCloseButton" data-drawer-close>
+                <span class="close-icon">✕</span>
+            </button>
+            <h2>Wireless Networks</h2>
+
+            <div class="drawer-content">
+                <h3>Key Concepts</h3>
+                <ul>
+                    <li>Wireless networks use radio frequencies like 2.4GHz and 5GHz.</li>
+                    <li>Access Points (APs) connect wireless devices to the wired network.</li>
+                    <li>Security standards include WPA2 and WPA3.</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+
+
+
+
+<dialog id="drawer-topologies" class="Drawer Drawer--right">
+    <div class="DrawerPanel">
+        <div class="DrawerPanelcontent">
+            <button type="button" class="DrawerCloseButton" data-drawer-close>
+                <span class="close-icon">✕</span>
+            </button>
+            <h2>Net
+                work Topologies</h2>
+
+            <div class="drawer-content">
+                <h3>Key Concepts</h3>
+                <ul>
+                    <li>Topologies describe physical and logical arrangement of devices.</li>
+                    <li>Common types: Star, Mesh, Bus, Ring, and Hybrid.</li>
+                    <li>Star is widely used today because it is simple and reliable.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</dialog>
+
+
+
+<dialog id="drawer-cabling" class="Drawer Drawer--right">
+    <div class="DrawerPanel">
+        <div class="DrawerPanel__content">
+            <button type="button" class="DrawerCloseButton" data-drawer-close>
+                <span class="close-icon">✕</span>
+            </button>
+            <h2>Cabling & Physical Media</h2>
+
+            <div class="drawer-content">
+                <h3>Key Concepts</h3>
+                <ul>
+                    <li>Includes copper (Ethernet), fiber optic, and coaxial cables.</li>
+                    <li>Ethernet categories: Cat5e, Cat6, Cat6a, Cat7.</li>
+                    <li>Fiber offers fastest speeds and long-distance communication.</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+
+
+
+<footer>
+    <div class="container-footer">
+        <p>&copy; 2025 Celec Network Roadmap. Master networking step by step.</p>
+    </div>
+</footer>
+
+<script src="phase2.js"></script>
+
+</body>
+</html>
