@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking Learning Roadmap - Celec Network</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="line">
+        <div class="container left-container">
+            <button class="text-box" data-topic="vlans-intro">
+                <h2>VLANs and trunking</h2>
+            </button>
+        </div>
+
+        <div class="container right-container">
+            <button class="text-box" data-topic="stp-intro">
+                <h2>Spanning Tree Protocol (STP)</h2>
+            </button>
+        </div>
+
+        <div class="container left-container">
+            <button class="text-box" data-topic="routing-protocols">
+                <h2>Routing protocols (OSPF, EIGRP, BGP)</h2>
+            </button>
+        </div>
+
+        <div class="container right-container">
+            <button class="text-box" data-topic="acls-intro">
+                <h2>Access Control Lists (ACLs)</h2>
+            </button>
+        </div>
+
+        <div class="container left-container">
+            <button class="text-box" data-topic="qos-intro">
+                <h2>Quality of Service (QoS)</h2>
+            </button>
+        </div>
+    </div>
+
+    <!-- Drawers -->
+    <dialog id="drawer-vlans-intro" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>VLANs and Trunking</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li><strong>Virtual Local Area Networks:</strong>found in layer 2 with which you can seperate big networks into smaller networks.</li> 
+                        <li>Prevents unnecessary traffic from reaching every device, enhancing performance and security.</li>
+                        <li>VLAN trunking is separating switches so that network data flows to the correct subnetwork.</li>
+                        <li>allows a single physical link to carry traffic for multiple VLANs.</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://ipcisco.com/lesson/vlans-virtual-local-area-networks/" target="_blank" class="resource-link">ipcisco - What is a VLAN?</a>
+                        <a href="https://www.cbtnuggets.com/blog/technology/networking/what-is-trunking-in-networking" target="_blank" class="resource-link">cbtnuggets - what is trunking in networkin ?</a>
+                        <a href="https://www.youtube.com/watch?v=ATbzbST_OIw" target="_blank" class="resource-link">YouTube - VLAN and Trunking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="drawer-stp-intro" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>Spanning Tree Protocol (STP)</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li><strong>STP:</strong>It blocks redundant links between any two network devices and leaves a single active link between them so as to eliminate loops.</li> 
+                        <li>If an active link fails, STP selects a proper redundant link and places it in forwarding state to ensure network connectivity.</li>
+                        <li>When spanning tree is enabled, all switches will send a special frame to each other called a BPDU</li>
+                        <li><strong>BPDU (Bridge Protocol Data Unit):</strong> contains the MAC address and the Priority together make up the bridge ID.</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.youtube.com/watch?v=6MW5P6Ci7lw&t=198s" target="_blank" rel="noopener noreferrer" class="resource-link">YouTube - Spanning Tree Protocol | CCNA</a>
+                        <a href="https://networklessons.com/spanning-tree/introduction-to-spanning-tree" target="_blank" rel="noopener noreferrer" class="resource-link">NetworkLessons - Introduction to Spanning Tree</a>
+                        <a href="https://www.geeksforgeeks.org/computer-networks/types-of-spanning-tree-protocol-stp/" target="_blank" rel="noopener noreferrer" class="resource-link">geeksforgeeks - types of spanning tree protocol (stp)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="drawer-routing-protocols" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>Routing protocols (OSPF, EIGRP, BGP)</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li><strong>OSPF (Open Shortest Path First):</strong>is based on the SPF algorithm, which is used to calculate the shortest path for each node. </li>
+                        <li><strong>EIGRP (Enhanced Interior Gateway Routing Protocol):</strong>is defined as a distance-vector protocol to automate routing configuration and decisions on a network.</li>
+                        <li><strong>BGP (Border Gateway Protocol):</strong>is defined as a networking protocol to exchange routing data among autonomous systems.</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.spiceworks.com/networking/bgp-vs-ospf-vs-eigrp/" target="_blank" class="resource-link">spiceworks - Comparaison between Protocols</a>
+                        <a href="https://www.youtube.com/watch?v=YRZxshxI1xs" target="_blank" class="resource-link">YouTube - What are Routing Protocols and their Types?</a>
+                        <a href="https://networkjourney.com/difference-between-eigrp-ospf-vs-bgp-routing-protocols/#:~:text=The%20enhanced%20interior%20gateway%20routing,data%20routing%20on%20the%20Internet." target="_blank" class="resource-link">NetworkJourney - EIGRP, OSPF vs BGP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="drawer-acls-intro" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>Access Control Lists (ACLs)</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li><strong>ACLs:</strong> is a set of rules defined for controlling network traffic and reducing network attacks.</li>
+                        <li>they are used to filter traffic based on the set of rules defined for the incoming or outgoing of the network.</li>
+                        <li>There are two types <strong>Standard Access-list</strong> and <strong>Extended Access-list</strong></li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.ccnablog.com/acls-access-control-lists-part-i/" target="_blank" class="resource-link">CCNABlog - ACLs (Access Control Lists)</a>
+                        <a href="https://www.youtube.com/watch?v=0gGhuYOh-54&list=PLIFyRwBY_4bRkAk_BkWL3ea6lRvOn8AKs" target="_blank" class="resource-link">YouTube - What Are Access Lists?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="drawer-qos-intro" class="Drawer Drawer--right">
+        <div class="DrawerPanel">
+            <div class="DrawerPanel__content">
+                <button type="button" class="DrawerCloseButton" data-drawer-close>
+                    <span class="close-icon">✕</span>
+                </button>
+                <h2>Quality of Service (QoS)</h2>
+                <div class="drawer-content">
+                    <h3>Key Concepts</h3>
+                    <ul>
+                        <li><strong>QoS:</strong>is a network feature that sorts and prioritizes data, ensuring that essential activities like video calls get the necessary bandwidth and speed.</li>
+                        <li>Measured Properties by QoS are Bandwidth, Latency/Delay, Jitter and Packet Loss</li>
+                        <li><strong>Advantages of QoS:</strong>Improved Network Efficiency, Reduced Latency and Jitter as VoIP and Enhanced User Experience</li>
+                        <li><strong>Disadvantages of QoS:</strong>Complexity and Potential for Resource Conflicts</li>
+                    </ul>
+                    <h3>Learning Resources</h3>
+                    <div class="resources">
+                        <a href="https://www.youtube.com/watch?v=9bs_HZKZk7w" target="_blank" class="resource-link">YouTube - What is QoS ? </a>
+                        <a href="https://www.fortinet.com/resources/cyberglossary/qos-quality-of-service" target="_blank" class="resource-link">FORTINET - quality of service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <footer>
+        <div class="container-footer">
+            <p>&copy; 2025 Celec Network Roadmap. Master networking step by step.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
